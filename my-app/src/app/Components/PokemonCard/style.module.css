@@ -1,0 +1,49 @@
+.Card{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3xs-2xs);
+
+    /* border: var(--space-3xs) solid black; */
+    box-shadow: var(--space-4xs) var(--space-3xs) var(--space-2xs) rgba(0, 0, 0, 0.04);
+    border-radius: var(--space-xs);
+    transition: all 0.3s ease;
+    width: var(--space-5xl-6xl);
+    height: var(--space-5xl-7xl);
+    background-color: var(--white-light);
+
+    cursor: pointer;
+}
+.Card:hover{
+    box-shadow: var(--space-4xs) var(--space-3xs) var(--space-2xs) rgba(0, 0, 0, 0.01);
+    border-radius: var(--space-xs);
+    transform: translateY(-5px);
+}
+.Pokemon_Details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-3xs-2xs);
+}
+.Pokemon_Details > img{
+    width: var(--space-4xl-5xl);
+    height: var(--space-4xl-5xl);
+    object-fit: contain;
+}
+.Pokemon_Details p{
+    font-size: var(--step-0);
+}
+.Pokemon_Ability{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Pokemon_Ability h5{
+    font-size: var(--step-0);
+}
+.Abilities{
+    display: flex;
+    gap: var(--space-3xs-2xs);
+}
+.Abilities p{
+    font-size: var(--step--1);
+}

@@ -1,0 +1,12 @@
+.Card_Container{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: var(--space-m);
+    max-width: var(--max-width);
+    margin:auto;
+}
+.heading{
+    margin:var(--space-2xs-xs) auto;
+    text-align: center;
+}

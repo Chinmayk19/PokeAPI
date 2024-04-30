@@ -1,0 +1,58 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --max-width:70em;
+  --grey-light:#e8eef8;
+  --white-light:#f0f0f0;
+  --black-dark:black;
+  --purple-light:#c39bd3;
+  
+  --space-4xs: clamp(0.125rem, 0.125rem + 0vi, 0.125rem);
+  --space-3xs: clamp(0.1875rem, 0.1875rem + 0vi, 0.1875rem);
+  --space-2xs: clamp(0.3125rem, 0.3125rem + 0vi, 0.3125rem);
+  --space-xs: clamp(0.6875rem, 0.6696rem + 0.0893vi, 0.75rem);
+  --space-xl: clamp(54px, 54px + 0.4167vi, 60px);
+  
+
+  --step-0: clamp(0.75rem, 0.5761rem + 0.8696vi, 1.25rem);
+  --step--1: clamp(0.600rem,  0.4950rem + 0.8696vi, 1.25rem);
+  
+  --space-m: clamp(1rem, 1rem + 0.1389vi, 1.125rem);
+
+  /* one-up pairs */
+  --space-xs-s: clamp(0.875rem, 0.7679rem + 0.5357vi, 1.25rem);
+  --space-2xs-xs: clamp(1.6875rem, 1.4554rem + 1.1607vi, 2.5rem);
+  --space-4xl-5xl: clamp(7.875rem, 6.5536rem + 6.6071vi, 12.5rem);
+  --space-5xl-6xl: clamp(11.25rem, 9.4643rem + 8.9286vi, 17.5rem);
+  --space-4xl-6xl: clamp(5.875rem, 6.5000rem + 8.9286vi, 17.5rem);
+  --space-6xl-7xl: clamp(16.875rem, 15.9821rem + 4.4643vi, 20rem);
+  --space-xl-2xl: clamp(11.375rem, 7.100rem + 24.0278vi, 25rem);
+  --space-2xl-3xl: clamp(15.5rem, 7.500rem + 33.1944vi, 32.375rem);
+  --space-3xl-4xl: clamp(6.75rem, 6.75rem + 92.5vi, 90rem);
+  
+  
+  /* Custom pair */
+  --space-3xs: clamp(0.125rem, 0.125rem + 0vi, 0.125rem);
+  --space-4xs-3xs: clamp(0.125rem, 0.125rem + 0.5556vi, 0.625rem);
+  --space-3xs-2xs: clamp(0.3125rem, 0.2038rem + 0.5435vi, 0.625rem);
+  --space-2xs-s: clamp(0.5625rem, 0.5625rem + 0.4167vi, 0.9375rem);
+  --space-5xl-7xl: clamp(11.25rem, 8.75rem + 12.5vi, 20rem);
+}
+html{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  background: var(--grey-light);
+  font-size: var(--step-0);
+  font-family:'Times New Roman', Times, serif;
+}
+a{
+  text-decoration: none;
+  color: var(--black-dark);
+}
