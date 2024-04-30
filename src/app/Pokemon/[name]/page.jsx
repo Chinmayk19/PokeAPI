@@ -1,16 +1,15 @@
 "use client"
-import { useSearchParams } from "next/navigation";
-import styles from "./style.module.css";
+import { useParams } from "next/navigation";
+// import styles from "./style.module.css";
 import { useEffect, useState } from "react";
 import PokemonDetails from "@/app/Components/PokemonDetails";
 
 const Page = () => {
-  const searchParams = useSearchParams();
-  const name = searchParams.get("name");
-  const result = JSON.parse(name);
+  const params = useParams();
+  const {name} =params ;
 
   useEffect(() => {
-    if (result) {
+    if (name) {
       fetchPokemon();
     }
   }, []); 
@@ -19,7 +18,7 @@ const Page = () => {
 
   const fetchPokemon = async () => {
     try {
-      const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${result.name}`);
+      const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${name}`);
       const data = await response.json();
       console.log(data);
       const firstFiveMoves = data.moves.slice(0, 5).map(move => move.move.name);

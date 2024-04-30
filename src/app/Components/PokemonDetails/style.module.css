@@ -2,9 +2,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-color: var(--purple-light);
-      box-shadow: var(--space-4xs) var(--space-3xs) var(--space-2xs) rgba(0, 0, 0, 0.04);
-      color: var(--white-light);
+    box-shadow: var(--space-4xs) var(--space-3xs) var(--space-2xs) rgba(0, 0, 0, 0.04);
+    color: var(--white-light);
     border-radius: var(--space-xs);
     gap: var(--space-3xs-2xs);
     margin: var(--space-xl) auto;
@@ -14,11 +15,8 @@
 .poke_Img{
     display: flex;
     flex-direction: column;
-    /* flex-grow: 1; */
     gap: var(--space-4xs-3xs);
     align-items: center;
-    /* width: var(--space-4xl-6xl);
-    height: var(--space-4xl-6xl); */
 
 }
 .poke_Img>img{
@@ -29,8 +27,8 @@
     font-size: var(--step-0);
 }
 .About_Pokemon{
-    flex-grow: 1;
-    margin:auto var(--space-xs-s);
+    /* flex-grow: 1; */
+     margin:0 var(--space-xs-s); 
 }
 .About_Pokemon p{
     font-size: var(--step--1);

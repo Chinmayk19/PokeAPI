@@ -4,19 +4,11 @@ import style from "./style.module.css";
 import Link from 'next/link';
 
 const PokemonCard = (props) => {
-  // Slice the abilities array to contain only the first two abilities
   const abilities = props.abilities.slice(0, 2);
-  const name={
-    name:props.name,
-    id:props.index,
-  }
 
   return (
     <>
-    <Link href={{
-      pathname:"/Pokemon",
-      query:{name:JSON.stringify(name)}
-    }}>
+    <Link href={`/Pokemon/${props.name}`}>
     <div className={style.Card} key={props.index}>
       <div className={style.Pokemon_Details}>
         <img src={props.image} alt={props.name}  />

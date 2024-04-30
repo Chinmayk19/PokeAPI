@@ -18,7 +18,7 @@
   
 
   --step-0: clamp(0.75rem, 0.5761rem + 0.8696vi, 1.25rem);
-  --step--1: clamp(0.600rem,  0.4950rem + 0.8696vi, 1.25rem);
+  --step--1: clamp(0.600rem,  0.4500rem + 0.8696vi, 1.25rem);
   
   --space-m: clamp(1rem, 1rem + 0.1389vi, 1.125rem);
 
@@ -27,10 +27,10 @@
   --space-2xs-xs: clamp(1.6875rem, 1.4554rem + 1.1607vi, 2.5rem);
   --space-4xl-5xl: clamp(7.875rem, 6.5536rem + 6.6071vi, 12.5rem);
   --space-5xl-6xl: clamp(11.25rem, 9.4643rem + 8.9286vi, 17.5rem);
-  --space-4xl-6xl: clamp(5.875rem, 6.5000rem + 8.9286vi, 17.5rem);
+  --space-4xl-6xl: clamp(4.875rem, 5.8000rem + 8.9286vi, 17.5rem);
   --space-6xl-7xl: clamp(16.875rem, 15.9821rem + 4.4643vi, 20rem);
   --space-xl-2xl: clamp(11.375rem, 7.100rem + 24.0278vi, 25rem);
-  --space-2xl-3xl: clamp(15.5rem, 7.500rem + 33.1944vi, 32.375rem);
+  --space-2xl-3xl: clamp(15.5rem, 7.000rem + 33.1944vi, 30.375rem);
   --space-3xl-4xl: clamp(6.75rem, 6.75rem + 92.5vi, 90rem);
   
   

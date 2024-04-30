@@ -2,15 +2,6 @@ import React from 'react'
 import styles from "./style.module.css"
 
 const pokemonDetails = (props) => {
-  // const colors=[
-  //  "#f8d5a3",
-  //  "#f5b7b1",
-  //  "#c39bd3",
-  //  "#aed6f1",
-  //  "#f9e79f"
-  // ]
-  // const randomcolor=colors[Math.floor(Math.random()*colors.length)];
-  // console.log(randomcolor);
   return (
     <div className={styles.pokemonDetails_Card} >
         <div className={styles.poke_Img}>
